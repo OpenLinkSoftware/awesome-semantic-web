@@ -144,11 +144,11 @@ Looking for something but can't find it? Add it to the ["Does it exist"](https:/
 - [Web Annotation Vocabulary](https://www.w3.org/TR/annotation-vocab/)
 - [Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/)
 
-### Linked Data Notifications
+### Linked Data Notifications (LDN)
 
 - [Linked Data Notifications](https://www.w3.org/TR/ldn/)
 
-### Linked Data Platform
+### Linked Data Platform (LDP)
 
 - [Linked Data Platform 1.0 Primer](https://www.w3.org/TR/ldp-primer/)
 - [Linked Data Platform Best Practices and Guidelines](https://www.w3.org/TR/ldp-bp/)
@@ -167,7 +167,7 @@ Looking for something but can't find it? Add it to the ["Does it exist"](https:/
 | [TriG](https://www.w3.org/TR/trig/) | Plain text format for serializing named graphs and RDF Datasets. | `application/trig`, `application/x-trig` |
 | [JSON-LD](https://json-ld.org/) | JSON-based Serialization for Linked Data. | `application/ld+json` |
 | [RDF/JSON](https://www.w3.org/TR/rdf-json/) | RDF 1.1 JSON Alternate Serialization. | `application/rdf+json` |
-| [N-Triples](https://www.w3.org/TR/n-triples/) | Line-based syntax for RDF datasets. |  `application/n-triples` |
+| [N-Triples](https://www.w3.org/TR/n-triples/) | Line-based syntax for RDF datasets. | `application/n-triples` |
 | [N-Quads](https://www.w3.org/TR/n-quads/) | Line-based syntax for RDF datasets. | `application/n-quads`, `text/x-nquads`, `text/nquads` |
 | [Notation3](https://www.w3.org/TeamSubmission/n3/) | Notation3 (N3): A readable RDF syntax. | `text/n3`, `text/rdf+n3` |
 | [RDF/XML](https://www.w3.org/TR/REC-rdf-syntax/) | RDF/XML Syntax Specification. | `application/rdf+xml`, `application/xml` |
@@ -196,7 +196,7 @@ Companies or businesses selling products with a primary focus is semantic web te
 - [Oracle](https://www.oracle.com/technetwork/database/options/spatialandgraph/overview/rdfsemantic-graph-1902016.html)
 - [OntoText](https://www.ontotext.com/)
 - [TopQuadrant](https://www.topquadrant.com/)
-- [OpenLinkSoftware](https://www.openlinksw.com/)
+- [OpenLink Software](https://www.openlinksw.com/)
 - [Cognitum](http://www.cognitum.eu/)
 - [entryscape](https://entryscape.com)
 - [zazuko](https://zazuko.com/)
@@ -205,7 +205,7 @@ Companies or businesses selling products with a primary focus is semantic web te
 Companies or businesses using semantic web technologies
 
 - [Optum](https://www.optum.com) - Health related, known to use semantic graphs (marklogic).
-- [DarkLight](https://www.darklight.ai) - DarkLight is an Artificial Intelligence Expert System for Active Cyber Defense and           Trusted Information Sharing.
+- [DarkLight](https://www.darklight.ai) - DarkLight is an Artificial Intelligence Expert System for Active Cyber Defense and Trusted Information Sharing.
 - [Volkswagen UK](https://www.volkswagen.co.uk)
 - [Siemens](https://www.siemens.com)
 - [IBM](http://www.ibm.com)
@@ -233,9 +233,9 @@ Companies or businesses using semantic web technologies
 
 ## Databases
 
-$ - Proprietary  
-OS - OpenSource  
-F - Free  
+$ - Proprietary
+OS - OpenSource
+F - Free
 
 - [Jena TDB](http://jena.apache.org/documentation/tdb/index.html) - (OS).
 - [Ontotext GraphDB™](http://graphdb.ontotext.com/) - ($/F).
@@ -243,13 +243,16 @@ F - Free
 - [Stardog](http://stardog.com) - ($/F).
 - [Strabon](http://www.strabon.di.uoa.gr/)
 - [Systap Blazegraph™](https://www.blazegraph.com/) - ($/OS).
-  - [docker-blazegraph](https://github.com/zorino/docker-blazegraph)
+  - [docker-blazegraph-zorino](https://github.com/zorino/docker-blazegraph)
+  - [docker-blazegraph-lyrasis](https://github.com/lyrasis/docker-blazegraph)
   - [blazegraph-samples](https://github.com/blazegraph/blazegraph-samples)
-  - [docker-blazegraph](https://github.com/lyrasis/docker-blazegraph)
   - [blazegraph-service](https://github.com/vastix/blazegraph-service)
 - [Marklogic](https://github.com/marklogic/semantic) - ($).
-- [Virtuoso](https://virtuoso.openlinksw.com/) - ($/OS).
+- [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) - ($/OS/F).
   - [virtuoso-opensource](https://github.com/openlink/virtuoso-opensource)
+  - [docker-virtuoso-opensource7](https://hub.docker.com/r/openlink/virtuoso-opensource-7)
+  - [docker-virtuoso-closedsource7](https://hub.docker.com/r/openlink/virtuoso-closedsource-7)
+  - [docker-virtuoso-closedsource8](https://hub.docker.com/r/openlink/virtuoso-closedsource-8)
 - [Oracle](http://www.oracle.com/technetwork/database/options/spatialandgraph/overview/rdfsemantic-more-2239071.html) - ($).
 - [Allegrograph](http://franz.com/agraph/allegrograph/) - ($/F).
 - [BrightstarDB](http://brightstardb.com/) - (OS) A native RDF database for the .NET platform written in C#.
@@ -328,8 +331,8 @@ F - Free
 
 ## Knowledge Graph Management
 
-$ - Proprietary  
-OS - OpenSource  
+$ - Proprietary
+OS - OpenSource
 
 - [Metaphacts](http://metaphacts.com) - ($) End-to-end platform to create and utilize enterprise knowledge graphs.
 - [OntoWiki](https://github.com/AKSW/OntoWiki) - (OS) Semantic data wiki as well as Linked Data publishing engine.
@@ -353,7 +356,7 @@ OS - OpenSource
 
 ### Federated SPARQL
 
-ACTIVE
+#### ACTIVE
 
 - [Semagrow](https://github.com/semagrow)
 - [CostFed](https://github.com/dice-group/CostFed)
@@ -367,8 +370,15 @@ ACTIVE
 - [FedX](https://github.com/VeritasOS/fedx)
 - [anapsid](https://github.com/anapsid/anapsid) - An adaptive query processing engine for SPARQL endpoints.
 - [luposdate](https://github.com/luposdate/luposdate) - A Semantic Web Database Management System developed by IFIS at the University of Lübeck.
+- [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) - ($/OS/F).
+  - [virtuoso-opensource](https://github.com/openlink/virtuoso-opensource)
+  - [docker-virtuoso-opensource7](https://hub.docker.com/r/openlink/virtuoso-opensource-7)
+  - [docker-virtuoso-closedsource7](https://hub.docker.com/r/openlink/virtuoso-closedsource-7)
+  - [docker-virtuoso-closedsource8](https://hub.docker.com/r/openlink/virtuoso-closedsource-8)
+- [URIBurner.com](http://uriburner.com/)
 
-ARCHIVE - inactive projects or old academic projects that may lack soruce code
+
+#### ARCHIVE - inactive projects or old academic projects that may lack soruce code
 
 - [SemWIQ](https://sourceforge.net/projects/semwiq/)
 - [DARQ](http://darq.sourceforge.net/)
@@ -409,6 +419,8 @@ ARCHIVE - inactive projects or old academic projects that may lack soruce code
 - [visu](https://github.com/jiemakel/visu) - Visual SPARQL query tool.
 - [Porthole](https://itunes.apple.com/us/app/porthole/id984035787) - Mac SPARQL editor and client.
 - [datastudio-sparql-connector](https://github.com/DataFabricRus/datastudio-sparql-connector) - SPARQL Connector for Google Data Studio.
+- [OpenLink Structured Data Sniffer (OSDS)](http://osds.openlinksw.com/) - Browser extension for Google Chrome, Microsoft Edge, Mozilla Firefox, Opera, and Vivaldi that unveils structured metadata embedded within HTML documents and web pages. 
+- [OpenLink Structured Data Editor (OSDE)](http://osde.openlinksw.com/) -  a hosted or local application for visually importing, editing, remixing, and exporting documents containing RDF-Language sentences
 
 ### Linked Data Platform (LDP)
 
@@ -420,6 +432,11 @@ ARCHIVE - inactive projects or old academic projects that may lack soruce code
 - [gold](https://github.com/linkeddata/gold) - Linked Data server for Go.
 - [CarbonLDP](https://github.com/CarbonLDP)
 - [trellis](https://github.com/trellis-ldp/trellis)
+- [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) - ($/OS/F).
+  - [virtuoso-opensource](https://github.com/openlink/virtuoso-opensource)
+  - [docker-virtuoso-opensource7](https://hub.docker.com/r/openlink/virtuoso-opensource-7)
+  - [docker-virtuoso-closedsource7](https://hub.docker.com/r/openlink/virtuoso-closedsource-7)
+  - [docker-virtuoso-closedsource8](https://hub.docker.com/r/openlink/virtuoso-closedsource-8)
 
 ## Web Annotations
 
@@ -452,6 +469,12 @@ ARCHIVE - inactive projects or old academic projects that may lack soruce code
 - [csv2rdf4lod-automation](https://github.com/timrdf/csv2rdf4lod-automation)
 - [tarql-component](https://github.com/opencube-toolkit/tarql-component)
 - [tarql](https://github.com/tarql/tarql)
+- [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) - ($/OS/F).
+  - [virtuoso-opensource](https://github.com/openlink/virtuoso-opensource)
+  - [docker-virtuoso-opensource7](https://hub.docker.com/r/openlink/virtuoso-opensource-7)
+  - [docker-virtuoso-closedsource7](https://hub.docker.com/r/openlink/virtuoso-closedsource-7)
+  - [docker-virtuoso-closedsource8](https://hub.docker.com/r/openlink/virtuoso-closedsource-8)
+- [URIBurner.com](http://uriburner.com/)
 
 ### Object to RDF Mapping
 
@@ -466,12 +489,17 @@ ARCHIVE - inactive projects or old academic projects that may lack soruce code
 - [jtriple](https://github.com/konradreiche/jtriple) - A Java object model binding for RDF.
 - [sparql-template](https://github.com/gushakov/sparql-template) - RDF store traversal with Jena API via automatic mapping between POJO and SPARQL. 
 
-### RDB to RDF
+### RDB to RDF a/k/a RDB2RDF
 
 - [d2rq](https://github.com/d2rq/d2rq) - Database to RDF mapping engine and SPARQL server.
 - [Sparqlify](https://github.com/AKSW/Sparqlify) - Sparql -> SQL Rewriter enabling virtual RDB -> RDF mappings.
 - [Sparqlify-Extendsions](https://github.com/AKSW/Sparqlify-Extensions) - Extension projects for Sparqlify.
 - [quetzal](https://github.com/Quetzal-RDF/quetzal) - SPARQL to SQL translation engine for multiple backends, such as DB2, PostgreSQL and Apache Spark.
+- [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) - ($/OS/F).
+  - [virtuoso-opensource](https://github.com/openlink/virtuoso-opensource) - RDB2RDF for RDB data stored within Virtuoso DB
+  - [docker-virtuoso-opensource7](https://hub.docker.com/r/openlink/virtuoso-opensource-7) - RDB2RDF for RDB data stored within Virtuoso DB
+  - [docker-virtuoso-closedsource7](https://hub.docker.com/r/openlink/virtuoso-closedsource-7) - RDB2RDF for RDB data stored within Virtuoso DB and/or remote ODBC-accessible data sources (including JDBC-acessible via ODBC-to-JDBC Bridge)
+  - [docker-virtuoso-closedsource8](https://hub.docker.com/r/openlink/virtuoso-closedsource-8) - RDB2RDF for RDB data stored within Virtuoso DB and/or remote ODBC-accessible data sources (including JDBC-acessible via ODBC-to-JDBC Bridge)
 
 ### XML
 
@@ -492,6 +520,12 @@ ARCHIVE - inactive projects or old academic projects that may lack soruce code
 - [sparqlmap](https://github.com/tomatophantastico/sparqlmap)
 - [rdf2rml](https://github.com/VladimirAlexiev/rdf2rml) - R2RML Generation from simple examples.
 - [ultrawrap](https://capsenta.com/)
+- [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) - ($/OS/F).
+  - [virtuoso-opensource](https://github.com/openlink/virtuoso-opensource) - R2RML for RDB data stored within Virtuoso DB
+  - [docker-virtuoso-opensource7](https://hub.docker.com/r/openlink/virtuoso-opensource-7) - R2RML for RDB data stored within Virtuoso DB
+  - [docker-virtuoso-closedsource7](https://hub.docker.com/r/openlink/virtuoso-closedsource-7) - R2RML for RDB data stored within Virtuoso DB and/or remote ODBC-accessible data sources (including JDBC-acessible via ODBC-to-JDBC Bridge)
+  - [docker-virtuoso-closedsource8](https://hub.docker.com/r/openlink/virtuoso-closedsource-8) - R2RML for RDB data stored within Virtuoso DB and/or remote ODBC-accessible data sources (including JDBC-acessible via ODBC-to-JDBC Bridge)
+
 
 ##### xR2RML
 
@@ -512,6 +546,13 @@ ARCHIVE - inactive projects or old academic projects that may lack soruce code
 
 - [sparql-generate](https://github.com/sparql-generate/sparql-generate)
 - [any23](https://any23.apache.org/)
+- [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) via Virtuoso Sponger - ($/OS/F).
+  - [virtuoso-opensource](https://github.com/openlink/virtuoso-opensource)
+  - [docker-virtuoso-opensource7](https://hub.docker.com/r/openlink/virtuoso-opensource-7)
+  - [docker-virtuoso-closedsource7](https://hub.docker.com/r/openlink/virtuoso-closedsource-7)
+  - [docker-virtuoso-closedsource8](https://hub.docker.com/r/openlink/virtuoso-closedsource-8)
+- [URIBurner.com](http://uriburner.com/)
+
 
 ## Ontologies
 
@@ -593,6 +634,12 @@ ARCHIVE - inactive projects or old academic projects that may lack soruce code
 - [elephant-reasoner](https://github.com/sertkaya/elephant-reasoner)
 - [HyLAR](https://github.com/ucbl/HyLAR-Reasoner)
 - [ruby-rdf/rdf-reasoner](https://github.com/ruby-rdf/rdf-reasoner)
+- [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) - ($/OS/F).
+  - [virtuoso-opensource](https://github.com/openlink/virtuoso-opensource) - limited Reasoning features
+  - [docker-virtuoso-opensource7](https://hub.docker.com/r/openlink/virtuoso-opensource-7) - limited Reasoning features
+  - [docker-virtuoso-closedsource7](https://hub.docker.com/r/openlink/virtuoso-closedsource-7) - limited Reasoning features
+  - [docker-virtuoso-closedsource8](https://hub.docker.com/r/openlink/virtuoso-closedsource-8) - custom Reasoning via SPIN
+
 
 ## Benchmarks
 
@@ -789,6 +836,7 @@ ARCHIVE - inactive projects or old academic projects that may lack soruce code
 - [ontodia](https://github.com/ontodia-org/ontodia) - Ontodia data diagraming library.
 - [rdfpuml](https://github.com/VladimirAlexiev/rdf2rml) - True RDF Diagrams.
 - [Ontology Visualisation](https://github.com/usc-isi-i2/ontology-visualization) - Create graphs from RDF using GraphViz.
+- [OpenLink HTML5 PivotViewer](https://github.com/OpenLinkSoftware/html5pivotviewer)
 
 ## Data Cube
 
@@ -856,6 +904,12 @@ ARCHIVE - inactive projects or old academic projects that may lack soruce code
 - [Openlink Structured Data Sniffer](http://osds.openlinksw.com/) - Browser extension for Google Chrome, Microsoft Edge, Mozilla Firefox, Opera, and Vivaldi that unveils structured metadata embedded within HTML documents and web pages. 
 - [ShacShifter](https://github.com/AKSW/ShacShifter) - Shapes Constraint Language (SHACL) to various other format.
 - [prefix.cc](https://prefix.cc) - namespace lookup for RDF developers
+- [OpenLink Structured Data Sniffer (OSDS)](http://osds.openlinksw.com/) - Browser extension for Google Chrome, Microsoft Edge, Mozilla Firefox, Opera, and Vivaldi that unveils structured metadata embedded within HTML documents and web pages. 
+- [OpenLink Structured Data Editor (OSDE)](http://osde.openlinksw.com/) -  a hosted or local application for visually importing, editing, remixing, and exporting documents containing RDF-Language sentences
+- [OpenLink Structured Data Injection-Engine (OSDI)](http://osdi.openlinksw.com/) - a soon-to-be-released engine (or cloud service) for infusing existing HTML documents with islands of structured data, using any combination of several RDF-Language notations including JSON-LD, RDF-Turtle, HTML5+Microdata, (X)HTML+RDFa, and Plain Old Semantic HTML (POSH)
+- [OpenLink Data Explorer (ODE)](http://ode.openlinksw.com/) - Browser extension for Google Chrome, Microsoft Edge, Mozilla Firefox, Opera, and Vivaldi that reads and writes RDF documents in Turtle, JSON, and other serializations.
+- [OpenLink YouID](http://youid.openlinksw.com/)
+
 
 ## Integrations
 
@@ -895,6 +949,12 @@ ARCHIVE - inactive projects or old academic projects that may lack soruce code
 - [webid-demo](https://github.com/digitalbazaar/webid-demo)
 - [webid-spec](https://github.com/webid-community/webid-spec)
 - [node-webid](https://github.com/magnetik/node-webid)
+- [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) - ($/OS/F).
+  - [virtuoso-opensource](https://github.com/openlink/virtuoso-opensource)
+  - [docker-virtuoso-opensource7](https://hub.docker.com/r/openlink/virtuoso-opensource-7)
+  - [docker-virtuoso-closedsource7](https://hub.docker.com/r/openlink/virtuoso-closedsource-7)
+  - [docker-virtuoso-closedsource8](https://hub.docker.com/r/openlink/virtuoso-closedsource-8)
+- [OpenLink YouID](http://youid.openlinksw.com/)
 
 ## SHACL Implementations
 
